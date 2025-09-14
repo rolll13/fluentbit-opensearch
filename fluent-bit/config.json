@@ -1,6 +1,6 @@
 {
   "name": "Fluent Bit to OpenSearch",
-  "version": "1.3",
+  "version": "1.4",
   "slug": "fluentbit_opensearch",
   "description": "Собирает логи Home Assistant и Supervisor и отправляет их в OpenSearch",
   "arch": ["aarch64"],

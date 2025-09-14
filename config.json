@@ -1,0 +1,13 @@
+{
+  "name": "Fluent Bit to OpenSearch",
+  "version": "1.0",
+  "slug": "fluentbit_opensearch",
+  "description": "Собирает логи Home Assistant и Supervisor и отправляет их в OpenSearch",
+  "arch": ["aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "options": {},
+  "schema": {},
+  "map": ["fluent-bit.conf", "parsers.conf"]
+}

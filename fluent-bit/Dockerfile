@@ -1,3 +1,11 @@
-FROM fluent/fluent-bit:4.0.9-arm64
+ARG BUILD_FROM=ghcr.io/home-assistant/aarch64-base:14.0.2
+FROM ${BUILD_FROM}
 
-CMD ["/fluent-bit/bin/fluent-bit", "-c", "/data/fluent-bit.conf"]
+# Устанавливаем fluent-bit и jq
+RUN apk add --no-cache fluent-bit jq
+
+# Копируем стартовый скрипт
+COPY run.sh /run.sh
+RUN chmod +x /run.sh
+
+CMD ["/run.sh"]

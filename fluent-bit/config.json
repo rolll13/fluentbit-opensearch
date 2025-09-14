@@ -1,6 +1,6 @@
 {
   "name": "Fluent Bit to OpenSearch",
-  "version": "1.4",
+  "version": "1.5",
   "slug": "fluentbit_opensearch",
   "description": "Собирает логи Home Assistant и Supervisor и отправляет их в OpenSearch",
   "arch": ["aarch64"],
@@ -20,7 +20,7 @@
     "opensearch_host": "str",
     "opensearch_port": "int",
     "opensearch_user": "str",
-    "opensearch_password": "str",
+    "opensearch_password": "password",
     "index_name": "str",
     "log_level": "match(trace|debug|info|warn|error|fatal)",
     "parsers": "str"

@@ -1,4 +1,5 @@
-FROM fluent/fluent-bit:2.2.7-arm64
+# Берём официальный Fluent Bit для ARM64
+FROM fluent/fluent-bit:4.0.9-arm64
 
 # Копируем скрипт запуска
 COPY run.sh /run.sh
